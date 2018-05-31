@@ -1,0 +1,68 @@
+<!--
+  Generated template for the StaffRegisterPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>StaffRegister</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<style>
+    
+    
+      ion-content{
+        background-color:#f9f9f9;
+        background: url('http://paper5pc.com/images/abstract-blue-minimalistic-blur-dreamy-wallpaper-1.jpg') center/cover;
+      }
+      .img{
+        margin-top:13%;
+        margin-bottom: 20%;
+        margin-left: 33.3%;
+        margin-right: 20%;
+    
+      }
+    </style>
+
+
+<ion-content padding>
+    <ion-list>
+        
+            <ion-item>
+              <ion-label color="primary">Name :</ion-label>
+              <ion-input placeholder="" [(ngModel)]="name"></ion-input>
+            </ion-item>
+        
+            <ion-item>
+              <ion-label color="primary">Staff ID :</ion-label>
+              <ion-input placeholder="" [(ngModel)]="staffid">></ion-input>
+            </ion-item>
+        
+            <ion-item>
+              <ion-label color="primary">Password :</ion-label>
+              <ion-input placeholder="" [(ngModel)]="password"  type="password"></ion-input>
+            </ion-item>
+        
+            <ion-item>
+              <ion-label color="primary">Confirm Password :</ion-label>
+              <ion-input placeholder="" [(ngModel)]="password2"  type="password"></ion-input>
+            </ion-item>
+        
+      
+      
+        
+          </ion-list>
+        
+          <button ion-button round (click)="adddata()" block color="secondary"> Register </button>
+        
+          <br>
+        
+          <button ion-button round (click)=" clear()" block color="secondary"> CLEAR </button>
+        
+
+</ion-content>
